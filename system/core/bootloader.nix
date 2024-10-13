@@ -1,8 +1,5 @@
 {pkgs, ...}: {
   boot = {
-    extraModprobeConfig = ''
-      options iwlwifi 11n_disable=8
-    '';
     kernelParams = [
       "nvidia-drm.fbdev=1"
       "nvidia.NVreg_PreserveVideoMemoryAllocations=1"

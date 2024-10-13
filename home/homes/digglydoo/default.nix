@@ -6,11 +6,11 @@
 }: {
   imports = [
     ../../gtk.nix
-    ../../zsh.nix
     ../../programs
     ../../programs/hyprland/monitors.nix
     ../../services
     ../../dev
+    ../../zsh
     ../../.
   ];
   # Home Manager needs a bit of information about you and the paths it should
@@ -45,7 +45,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    webcord-vencord
     google-chrome
     firefox
     vscode
@@ -111,5 +110,4 @@
   };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  programs.starship.enable = true;
 }

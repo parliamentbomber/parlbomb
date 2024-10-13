@@ -30,7 +30,6 @@
     swayosd
     swww
     nautilus
-    alacritty
   ];
   home.sessionVariables = {
     QT_QPA_PLATFORM = "wayland";

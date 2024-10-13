@@ -30,6 +30,7 @@ in {
       # wm commands
       bind =
         [
+          "$mod SHIFT, tab, focusmonitor, next"
           "$mod, Q, killactive"
           "$mod, F, fullscreen"
           "$mod, R, togglesplit"
@@ -48,7 +49,7 @@ in {
           "$mod, N, exec, alacritty"
           "$mod, SPACE, exec, anyrun"
           #special workspaces
-          "$mod, grave, exec, pgrep discord && hyprctl dispatch togglespecialworkspace discord || discord &"
+          "$mod, grave, togglespecialworkspace, discord"
           "$mod, tab, exec, pgrep spotify && hyprctl dispatch togglespecialworkspace spotify || spotify &"
           "$mod, M, exec, pgrep qalculate-gtk && hyprctl dispatch togglespecialworkspace calculator || qalculate-gtk &"
 

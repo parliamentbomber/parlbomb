@@ -19,7 +19,8 @@
     };
   };
   networking.hostName = "pessima";
-
+  security.pam.services.login.enableGnomeKeyring = true;
+  security.pam.services.gdm.enableGnomeKeyring = true;
   security.tpm2.enable = true;
   services = {
     fstrim.enable = true;

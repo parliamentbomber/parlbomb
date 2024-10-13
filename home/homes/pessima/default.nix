@@ -6,11 +6,11 @@
 }: {
   imports = [
     ../../gtk.nix
-    ../../zsh.nix
     ../../programs
     ../../programs/hyprland/monitors.nix
     ../../services
     ../../dev
+    ../../zsh
     ../../.
   ];
   # Home Manager needs a bit of information about you and the paths it should
@@ -108,5 +108,4 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  programs.starship.enable = true;
 }

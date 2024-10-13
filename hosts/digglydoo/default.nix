@@ -21,7 +21,9 @@
   };
 
   # unlock GPG keyring on login
-  security.pam.services.greetd.enableGnomeKeyring = true;
+  security.pam.services.gdm.enableGnomeKeyring = true;
+  security.pam.services.login.enableGnomeKeyring = true;
+
   networking.hostName = "digglydoo";
 
   security.tpm2.enable = true;

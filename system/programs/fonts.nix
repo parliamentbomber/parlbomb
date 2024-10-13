@@ -19,9 +19,11 @@
       ipafont
       source-code-pro
 
-      #inputs.self.packages.${pkgs.system}.torus-pro
+      #mono
+      jetbrains-mono
 
-      (nerdfonts.override {fonts = ["Meslo"];})
+      #inputs.self.packages.${pkgs.system}.torus-pro
+      (pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];})
     ];
     fontconfig = {
       enable = true;

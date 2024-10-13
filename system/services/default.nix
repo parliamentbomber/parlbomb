@@ -1,7 +1,9 @@
 {pkgs, ...}: {
   services = {
-    gnome.gnome-keyring = {
-      enable = true;
+    gnome = {
+      gnome-keyring.enable = true;
+      gnome-online-accounts.enable = true;
+      sushi.enable = true;
     };
     dbus = {
       packages = with pkgs; [dconf gcr gnome.gnome-settings-daemon udisks2];

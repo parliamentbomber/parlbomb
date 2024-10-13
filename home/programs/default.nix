@@ -7,5 +7,6 @@
     ./git
     ./polkit.nix
     ./xdg.nix
+    ./alacritty
   ];
 }
