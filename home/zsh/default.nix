@@ -6,6 +6,19 @@
   ...
 }: {
   programs = {
+    tmux = {
+      enable = true;
+      extraConfig = builtins.readFile ./configs/tmux.conf;
+      plugins = with pkgs.tmuxPlugins; [
+          cpu
+          vim-tmux-navigator
+          power-theme
+      ];
+    };
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
     zsh = {
       plugins = [
         {

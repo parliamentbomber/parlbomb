@@ -35,17 +35,22 @@ in {
           "$mod, F, fullscreen"
           "$mod, R, togglesplit"
           "$mod, P, pseudo"
-          "$mod, L, exec, hyprlock"
+          "$mod, escape, exec, hyprlock"
           "$mod, O, togglefloating"
           "$mod, V, exec, alacritty --class clipse -e 'clipse'"
           "$mod SHIFT, F, fullscreen,1"
-          "ALT, TAB, cyclenext"
+          # vim kb
+          "$mod, H, movefocus, l"
+          "$mod, J, movefocus, d"
+          "$mod, K, movefocus, u"
+          "$mod, L, movefocus, r"
+
           "$mod, P, pin"
           "$mod, left, movewindow,l"
           "$mod, right, movewindow,r"
 
           # programs
-          "$mod, E, exec, nautilus"
+          "$mod, E, exec, nautilus --new-window"
           "$mod, N, exec, alacritty"
           "$mod, SPACE, exec, anyrun"
           #special workspaces
