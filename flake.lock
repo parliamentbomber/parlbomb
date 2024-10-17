@@ -745,6 +745,24 @@
         "type": "github"
       }
     },
+    "minegrub": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "lastModified": 1709346676,
+        "narHash": "sha256-QbiNQlocM6HWAeJtX0iorqXix5d4OGpqehxg7RqDxJc=",
+        "owner": "ocfox",
+        "repo": "minegrub-world-sel-theme",
+        "rev": "051d3708969468790f61be9fd252d43b8414eff7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ocfox",
+        "repo": "minegrub-world-sel-theme",
+        "type": "github"
+      }
+    },
     "naersk": {
       "inputs": {
         "nixpkgs": [
@@ -888,6 +906,22 @@
     },
     "nixpkgs_4": {
       "locked": {
+        "lastModified": 1709260429,
+        "narHash": "sha256-Fgso2L4vl5NDIWBjX03+P8580N1oGxic/iCd11GjfJU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "244ee5631a7a39b0c6bd989cdf9a1326cd3c5819",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
         "lastModified": 1728018373,
         "narHash": "sha256-NOiTvBbRLIOe5F6RbHaAh6++BNjsb149fGZd1T4+KBg=",
         "owner": "nixos",
@@ -902,7 +936,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_5": {
+    "nixpkgs_6": {
       "locked": {
         "lastModified": 1682809678,
         "narHash": "sha256-jqR8t82mWotOSgnWZvr6xXCO/tc3fCPTLMPvI7Jo5rA=",
@@ -918,7 +952,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_6": {
+    "nixpkgs_7": {
       "locked": {
         "lastModified": 1728018373,
         "narHash": "sha256-NOiTvBbRLIOe5F6RbHaAh6++BNjsb149fGZd1T4+KBg=",
@@ -1023,8 +1057,9 @@
         "hyprland-plugins": "hyprland-plugins",
         "lanzaboote": "lanzaboote",
         "matugen": "matugen",
+        "minegrub": "minegrub",
         "nh": "nh",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_5",
         "nixvim": "nixvim",
         "shadower": "shadower",
         "spicetify": "spicetify",
@@ -1076,7 +1111,7 @@
     "shadower": {
       "inputs": {
         "naersk": "naersk",
-        "nixpkgs": "nixpkgs_5"
+        "nixpkgs": "nixpkgs_6"
       },
       "locked": {
         "lastModified": 1721405001,
@@ -1095,7 +1130,7 @@
     "spicetify": {
       "inputs": {
         "flake-compat": "flake-compat_4",
-        "nixpkgs": "nixpkgs_6"
+        "nixpkgs": "nixpkgs_7"
       },
       "locked": {
         "lastModified": 1728188225,
