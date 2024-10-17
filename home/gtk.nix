@@ -1,13 +1,18 @@
 {
   pkgs,
   inputs,
+  config,
   lib,
   ...
 }: {
   home.packages = with pkgs; [
     dconf
   ];
-
+  xdg.configFile = {
+    "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
+    "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
+    "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
+  };
   dconf = {
     enable = true;
     settings = {
@@ -41,8 +46,9 @@
     theme = {
       name = "Gruvbox-Orange-Dark";
       package = pkgs.gruvbox-gtk-theme.override {
-        colorVariants = [ "dark" ];
-        themeVariants = [ "orange" ];
+        colorVariants = ["dark"];
+        themeVariants = ["orange"];
+        tweakVariants = [ "macos" ];
       };
     };
   };
