@@ -48,7 +48,7 @@
       package = pkgs.gruvbox-gtk-theme.override {
         colorVariants = ["dark"];
         themeVariants = ["orange"];
-        tweakVariants = [ "macos" ];
+        tweakVariants = ["macos"];
       };
     };
   };

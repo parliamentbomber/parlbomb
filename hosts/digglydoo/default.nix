@@ -8,7 +8,7 @@
     ./hardware-configuration.nix
     ../../system
     ../../system/hardware/nvidia.nix
-    ../../system/core/lanzaboote.nix
+    ../../system/core/bootloader.nix
   ];
   environment.systemPackages = with pkgs; [
   ];

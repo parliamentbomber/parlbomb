@@ -15,7 +15,12 @@
   environment.variables = {
     GDK_SCALE = "0.5";
   };
-
+  boot = {
+    kernelParams = [
+      "nvidia-drm.fbdev=1"
+      "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
+    ];
+  };
   hardware = {
     nvidia = {
       open = true;

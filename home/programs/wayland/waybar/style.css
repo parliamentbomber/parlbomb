@@ -1,0 +1,111 @@
+
+* {
+	all: unset;
+	border: none;
+	border-radius: 0;
+	font-family: JetBrainsMono, FontAwesome;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	min-height: 0px;
+}
+
+#waybar {
+	background: #262626;
+	color: #262626;
+}
+
+#custom-cap-left {
+	color: #FFAF5F;
+	background-color: #3A3A3A;
+}
+#custom-gap {
+	color: #262626;
+	background-color: #FFAF5F;
+}
+#custom-cap-left.dark {
+	color: #3A3A3A;
+	background-color: #262626;
+}
+#custom-cap-right {
+	color: #FFAF5F;
+	background: #3A3A3A;
+}
+#custom-cap-right.dark {
+	color: #3A3A3A;
+	background: #262626;
+}
+
+#idle_inhibitor {
+	background: @bgcolor;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#custom-weather,
+#custom-logo {
+	padding-left: 10px;
+	color: #262626;
+	background:#FFAF5F;
+}
+#custom-power {
+	padding-left: 10px;
+	color: #262626;
+	background:#FFAF5F;
+	padding-right: 10px;
+}
+#custom-lock {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #262626;
+	background:#FFAF5F;
+}
+#temperature, 
+#memory, 
+#pulseaudio, 
+#custom-vpn,
+#disk,
+#battery {
+	color: #FFAF5F;
+	background: #3A3A3A;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#window {
+	color: #FFAF5F;
+	background: #3A3A3A;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#workspaces {
+	color: #FFAF5F;
+	background: #3A3A3A;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#clock {
+	background: #FFAF5F;
+	color: #262626;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#clock.clock2{
+	background: #3A3A3A;
+	color: #FFAF5F;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+#network {
+	background: #FFAF5F;
+	color: #262626;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#bluetooth {
+	background: #FFAF5F;
+	color: #262626;
+	padding-left: 10px;
+	padding-right: 10px;
+}

@@ -14,10 +14,6 @@
     '';
     kernelPackages = pkgs.pkgs.linuxPackages_latest;
     kernelModules = ["kvm-intel"];
-    kernelParams = [
-      "nvidia_drm.fbdev=1"
-      "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
-    ];
     supportedFilesystems = ["ntfs"];
     loader = {
       timeout = 15;

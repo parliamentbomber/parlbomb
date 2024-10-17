@@ -1,0 +1,160 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 21,
+    "modules-left": [
+      "group/power",
+      "custom/cap-left", 
+      "group/windows", 
+      "custom/cap-left#dark", 
+      "custom/gap",
+      "network",
+      "bluetooth",
+      "custom/cap-left",
+      "battery"
+    ],
+    "modules-center": [""],
+    "modules-right": ["custom/cap-right#dark", "clock#clock2", "custom/cap-right","clock" ],
+    "battery": {
+      "bat": "BAT0",
+      "min-length": 5,
+      "states": {
+      "full": 95,
+      "warning": 30,
+      "critical": 15
+      },
+      "tooltip": false,
+      "full-at": 90,
+      "format-plugged": "{icon} {capacity}%",
+      "format-charging": "{icon} {capacity}%",
+      "format": "{icon} {capacity}%",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "group/windows": {
+      "orientation": "horizontal",
+      "drawer": {
+        "transition-duration": 500,
+        "transition-left-to-right": false,
+        "click-to-reveal": true
+      },
+      "modules": [
+        "hyprland/workspaces",
+        "hyprland/window"
+      ]
+    },
+    "group/power": {
+      "orientation": "horizontal",
+      "drawer": {
+        "transition-duration": 500,
+        "transition-left-to-right": false,
+        "click-to-reveal": true
+    
+      },
+      "modules": [
+        "custom/logo",
+        "custom/power",
+        "custom/lock"
+      ]
+    },
+    "custom/lock": {
+        "format": "󰍁",
+        "tooltip": false,
+        "on-click": "hyprlock"
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "systemctl shutdown"
+    },
+    "hyprland/workspaces": {
+      "active-only": true,
+      "format": "{id}"
+    },
+    "hyprland/window": {
+      "format": "{title}"
+    },
+    
+    "clock": {
+      "format": " {:%Y-%m-%d}",
+      "tooltip": false
+    },
+    "clock#clock2": {
+      "format": " {:%H:%M}",
+      "tooltip": false
+    },
+    "network": {
+      "format-wifi": "  {essid}",
+      "format-ethernet": " {ipaddr}",
+      "format-linked": " {ipaddr}",
+      "format-disconnected": " Disconnected",
+      "format-disabled": "",
+      "tooltip": false,
+      "max-length": 21,
+      "min-length": 6
+    },
+    "pulseaudio": {
+      "tooltip": false,
+      "min-length": 6,
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{icon} {volume}%",
+      "format-muted": "MUTE",
+      "format-icons": {
+      "headphone": "",
+      "headset": "",
+      "default": ["", "", ""]
+      },
+      "scroll-step": 1
+    },
+    "temperature": {
+      "tooltip": false,
+      "min-length": 5,
+      "critical-threshold": 90,
+      "format": "{icon} {temperatureC}°C",
+      "format-critical": "{icon} {temperatureC}°C",
+      "format-icons": {
+      "default": ["", "", "", "", ""]
+      }
+    },
+    "memory": {
+      "tooltip": false,
+      "format": " {percentage}%",
+      "states": {
+        "critical":90
+      },
+      "min-length": 5
+    },
+    "disk": {
+      "tooltip": false,
+      "path": "/",
+      "interval": 60,
+      "min-length": 5,
+      "format": " {percentage_used}%",
+      "states": {
+      "critical": 90
+      }
+    },
+    "custom/cap-left": {
+      "tooltip": false,
+        "format": ""
+    },
+    "custom/cap-left#dark": {
+      "tooltip": false,
+        "format": ""
+    },
+    "custom/cap-right": {
+      "tooltip": false,
+        "format": ""
+    },
+    "custom/cap-right#dark": {
+      "tooltip": false,
+        "format": ""
+    },
+    "custom/gap": {
+      "tooltip": false,
+      "format": ""
+    },
+    "custom/logo": {
+      "format": "{}",
+      "exec": "echo ' '"
+    }
+}    

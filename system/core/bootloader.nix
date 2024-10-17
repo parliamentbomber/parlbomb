@@ -1,12 +1,17 @@
-{pkgs, inputs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
     inputs.minegrub.nixosModules.default
   ];
   boot = {
-    kernelParams = [
-      "nvidia-drm.fbdev=1"
-      "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
-    ];
+    extraModprobeConfig = ''
+      options iwlwifi 11n_disable=8
+    '';
+    kernelPackages = pkgs.pkgs.linuxPackages_latest;
+    kernelModules = ["kvm-intel"];
     supportedFilesystems = ["ntfs"];
     loader = {
       systemd-boot.enable = false;
