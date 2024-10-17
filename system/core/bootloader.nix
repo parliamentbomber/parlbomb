@@ -1,5 +1,5 @@
 {pkgs, inputs, ...}: {
-  import = [
+  imports = [
     inputs.minegrub.nixosModules.default
   ];
   boot = {
