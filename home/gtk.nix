@@ -39,16 +39,10 @@
       size = 9;
     };
     theme = {
-      name = "Graphite-pink-Dark";
-      package = pkgs.graphite-gtk-theme.override {
-        themeVariants = ["pink"];
-        colorVariants = ["dark"];
-        #sizeVariants = [ "compact" ];
-        tweaks = [
-          "normal"
-          "rimless"
-          "darker"
-        ];
+      name = "Gruvbox-Orange-Dark";
+      package = pkgs.gruvbox-gtk-theme.override {
+        colorVariants = [ "dark" ];
+        themeVariants = [ "orange" ];
       };
     };
   };

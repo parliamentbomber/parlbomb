@@ -319,7 +319,6 @@
         padding-right: 4px;
         color: @blue_1;
         font-size: 16px;
-
     }
 
     #tray {

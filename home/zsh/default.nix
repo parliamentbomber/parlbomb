@@ -10,9 +10,9 @@
       enable = true;
       extraConfig = builtins.readFile ./configs/tmux.conf;
       plugins = with pkgs.tmuxPlugins; [
-          cpu
-          vim-tmux-navigator
-          power-theme
+        cpu
+        vim-tmux-navigator
+        power-theme
       ];
     };
     zoxide = {

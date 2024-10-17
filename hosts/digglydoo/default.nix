@@ -12,17 +12,22 @@
   ];
   environment.systemPackages = with pkgs; [
   ];
-  services.xserver = {
-    enable = true;
-    displayManager.gdm = {
+  services = {
+    displayManager.ly = {
       enable = true;
-      wayland = true;
     };
   };
 
   # unlock GPG keyring on login
-  security.pam.services.gdm.enableGnomeKeyring = true;
-  security.pam.services.login.enableGnomeKeyring = true;
+
+  security.pam.services = {
+    ly = {
+      enableGnomeKeyring = true;
+    };
+    login = {
+      enableGnomeKeyring = true;
+    };
+  };
 
   networking.hostName = "digglydoo";
 

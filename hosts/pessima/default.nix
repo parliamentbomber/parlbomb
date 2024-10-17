@@ -12,15 +12,21 @@
   ];
   boot.kernelPackages = pkgs.linuxPackages_latest;
   environment.systemPackages = with pkgs; [];
-  services.xserver = {
-    enable = true;
-    displayManager.gdm = {
+  services = {
+    displayManager.ly = {
       enable = true;
     };
   };
+
   networking.hostName = "pessima";
-  security.pam.services.login.enableGnomeKeyring = true;
-  security.pam.services.gdm.enableGnomeKeyring = true;
+  security.pam.services = {
+    ly = {
+      enableGnomeKeyring = true;
+    };
+    login = {
+      enableGnomeKeyring = true;
+    };
+  };
   security.tpm2.enable = true;
   services = {
     fstrim.enable = true;
