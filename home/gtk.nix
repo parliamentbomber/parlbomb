@@ -44,8 +44,12 @@
       size = 9;
     };
     theme = {
-      name = "Kanagawa-BL";
-      package = pkgs.kanagawa-gtk-theme;
+      name = "Gruvbox-Orange-Dark";
+      package = pkgs.gruvbox-gtk-theme.override {
+        colorVariants = ["dark"];
+        themeVariants = ["orange"];
+        tweakVariants = [ "macos" ];
+      };
     };
   };
 }
