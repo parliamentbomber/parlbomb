@@ -30,6 +30,10 @@ in {
       # wm commands
       bind =
         [
+          "$mod, X, moveoutofgroup"
+          "$mod CONTROL,Z, togglegroup,"
+          "$mod SHIFT, Z, changegroupactive, f"
+          "$mod, Z, changegroupactive, b"
           "$mod, mouse_down, focusmonitor, -1"
           "$mod, mouse_up, focusmonitor, +1"
           "$mod SHIFT, tab, focusmonitor, next"

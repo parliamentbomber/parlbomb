@@ -63,6 +63,14 @@
       gestures = {
         workspace_swipe = true;
       };
+      group = {
+        groupbar = {
+          "col.active" = "rgb(FFAF5F)";
+          "col.inactive" = "rgb(262626)";
+          gradients = false;
+          render_titles = false;
+        };
+      };
       decoration = {
         rounding = 0;
         blur = {
