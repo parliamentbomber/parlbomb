@@ -79,7 +79,7 @@
       "tooltip": false
     },
     "clock#clock2": {
-      "format": " {:%H:%M}",
+      "format": " {:%I:%M %p}",
       "tooltip": false
     },
     "network": {

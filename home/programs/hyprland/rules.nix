@@ -13,7 +13,7 @@
       "size 622 652,class:(clipse)" # set the size of the window as necessary
     ];
     layerrule = let
-      layers = "^(anyrun|gtk-layer-shell)$";
+      layers = "^(anyrun|gtk-layer-shell|swayosd)$";
     in [
       "blur, ${layers}"
       "ignorealpha 0.2, ${layers}"

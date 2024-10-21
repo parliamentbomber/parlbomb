@@ -30,9 +30,12 @@ in {
       # wm commands
       bind =
         [
+          "$mod, mouse_down, focusmonitor, -1"
+          "$mod, mouse_up, focusmonitor, +1"
           "$mod SHIFT, tab, focusmonitor, next"
           "$mod, Q, killactive"
           "$mod, F, fullscreen"
+          "$mod, B, exec, firefox"
           "$mod, R, togglesplit"
           "$mod, P, pseudo"
           "$mod, escape, exec, hyprlock"

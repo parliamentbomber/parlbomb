@@ -92,6 +92,7 @@
         key_press_enables_dpms = true;
         enable_swallow = true;
         swallow_regex = "^(alacritty)$";
+        new_window_takes_over_fullscreen = 2;
       };
     };
   };
