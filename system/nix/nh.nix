@@ -5,7 +5,7 @@
   ...
 }: {
   # nh default flake
-  environment.variables.FLAKE = "${config.users.users.parliamentbomber.home}/caernixeron";
+  environment.variables.FLAKE = "${config.users.users.parliamentbomber.home}/parlbomb";
 
   programs.nh = {
     enable = true;

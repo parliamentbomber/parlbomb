@@ -11,10 +11,32 @@
       "network",
       "bluetooth",
       "custom/cap-left",
-      "battery"
+      "battery",
+      "wireplumber",
+      "custom/cap-left#dark",
+      "custom/gap#endcap"
     ],
+    "wireplumber": {
+      "format": "{icon} {volume}%",
+      "format-muted": "",
+      "on-click": "helvum",
+      "format-icons": ["", "", ""]
+    },
     "modules-center": [""],
-    "modules-right": ["custom/cap-right#dark", "clock#clock2", "custom/cap-right","clock" ],
+    "modules-right": [
+      "custom/gap-right#dark",
+      "network#right",
+      "custom/cap-right#dark", 
+      "clock#clock2", 
+      "custom/cap-right",
+      "clock"
+    ],
+    "backlight/slider": {
+      "min": 0,
+      "max": 100,
+      "orientation": "horizontal",
+      "device": "intel_backlight"
+    },
     "battery": {
       "bat": "BAT0",
       "min-length": 5,
@@ -92,6 +114,9 @@
       "max-length": 21,
       "min-length": 6
     },
+    "network#right": {
+      "format": "{bandwidthDownBytes}"
+    },
     "pulseaudio": {
       "tooltip": false,
       "min-length": 6,
@@ -141,6 +166,10 @@
       "tooltip": false,
         "format": ""
     },
+    "custom/cap-left#dark-orange": {
+      "tooltip": false,
+        "format": ""
+    },
     "custom/cap-right": {
       "tooltip": false,
         "format": ""
@@ -153,8 +182,21 @@
       "tooltip": false,
       "format": ""
     },
+    "custom/gap#endcap": {
+      "tooltip": false,
+      "format": "🯥"
+    },
+    "custom/gap-right": {
+      "tooltip": false,
+      "format": ""
+    },
+    "custom/gap-right#dark": {
+      "tooltip": false,
+      "format": ""
+    },
     "custom/logo": {
       "format": "{}",
       "exec": "echo ' '"
     }
+    
 }    

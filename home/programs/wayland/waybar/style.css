@@ -14,7 +14,29 @@
 	background: #262626;
 	color: #262626;
 }
-
+#backlight-slider {
+	background-color: #3A3A3A;
+}
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+	color: aqua;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#backlight-slider trough {
+    min-height: 5px;
+    min-width: 50px;
+    border-radius: 5px;
+    background-color: #262626;
+}
+#backlight-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: #FFAF5F;
+}
 #custom-cap-left {
 	color: #FFAF5F;
 	background-color: #3A3A3A;
@@ -23,9 +45,25 @@
 	color: #262626;
 	background-color: #FFAF5F;
 }
+#custom-gap.endcap {
+	color: #FFAF5F;
+	background-color: #262626;
+}
+#custom-gap-right {
+	color: #262626;
+	background-color: #FFAF5F;
+}
+#custom-gap-right.dark {
+	color: #FFAF5F;
+	background-color: #262626;
+}
 #custom-cap-left.dark {
 	color: #3A3A3A;
 	background-color: #262626;
+}
+#custom-cap-left.dark-orange {
+	color: #3A3A3A;
+	background-color: #FFAF5F;
 }
 #custom-cap-right {
 	color: #FFAF5F;
@@ -33,7 +71,7 @@
 }
 #custom-cap-right.dark {
 	color: #3A3A3A;
-	background: #262626;
+	background: #FFAF5F;
 }
 
 #idle_inhibitor {
@@ -66,6 +104,12 @@
 #custom-vpn,
 #disk,
 #battery {
+	color: #FFAF5F;
+	background: #3A3A3A;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#wireplumber {
 	color: #FFAF5F;
 	background: #3A3A3A;
 	padding-left: 10px;

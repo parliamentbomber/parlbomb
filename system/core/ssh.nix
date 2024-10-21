@@ -5,4 +5,5 @@
     settings.KbdInteractiveAuthentication = false;
     settings.X11Forwarding = true;
   };
+  security.pam.sshAgentAuth.enable = true;
 }

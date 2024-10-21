@@ -18,8 +18,6 @@
     };
   };
 
-  # unlock GPG keyring on login
-
   security.pam.services = {
     ly = {
       enableGnomeKeyring = true;

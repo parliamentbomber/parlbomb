@@ -43,7 +43,6 @@
   };
 
   boot.kernelModules = ["tcp_bbr"];
-
   security = {
     # userland niceness
     rtkit.enable = true;

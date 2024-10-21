@@ -11,7 +11,6 @@
       extraConfig = builtins.readFile ./configs/tmux.conf;
       plugins = with pkgs.tmuxPlugins; [
         cpu
-        vim-tmux-navigator
         power-theme
       ];
     };
@@ -72,11 +71,6 @@
         zstyle ':completion:*' use-cache on
         zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
         _comp_options+=(globdots)
-
-        ${lib.optionalString config.services.gpg-agent.enable ''
-          gnupg_path=$(ls $XDG_RUNTIME_DIR/gnupg)
-          export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gnupg/$gnupg_path/S.gpg-agent.ssh"
-        ''}
       '';
     };
   };

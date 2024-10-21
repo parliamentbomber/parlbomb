@@ -16,13 +16,12 @@
         rink
         shell
         translate
-        symbols
         stdin
         dictionary
       ];
 
       width.fraction = 0.3;
-      y.absolute = 0;
+      y.fraction = 0.4;
       hidePluginInfo = true;
       #closeOnClick = true;
       maxEntries = 7;
@@ -30,7 +29,7 @@
     extraCss = ''
       * {
         transition: 200ms ease;
-        font-family: Torus;
+        font-family: Torus Pro;
         font-size: 1.3rem;
       }
 
@@ -41,7 +40,6 @@
       #main { background: transparent; }
 
       #match.activatable {
-        border-radius: 16px;
         padding: .3rem .9rem;
         margin-top: .01rem;
       }
@@ -49,7 +47,6 @@
       #match.activatable:last-child { margin-bottom: .6rem; }
 
       #plugin:hover #match.activatable {
-        border-radius: 10px;
         padding: .3rem;
         margin-top: .01rem;
         margin-bottom: 0;
@@ -62,13 +59,11 @@
       #entry {
         background: rgba(255,255,255,.05);
         border: 1px solid rgba(255,255,255,.1);
-        border-radius: 16px;
         margin: .3rem;
         padding: .3rem 1rem;
       }
 
       list > #plugin {
-        border-radius: 16px;
         margin: 0 .3rem;
       }
       list > #plugin:first-child { margin-top: .3rem; }
@@ -78,7 +73,6 @@
       box#main {
         background: rgba(31, 31, 40, .5);
         box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1), 0 0 0 1px rgba(0, 0, 0, .5);
-        border-radius: 24px;
         padding: .3rem;
       }
     '';
